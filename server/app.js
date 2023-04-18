@@ -8,7 +8,7 @@ app.use(morgan("tiny"));
 app.use(cors());
 app.use(express.json({ strict: false }));
 
-const port = 4000;
+const port = 8080;
 const dataRouter = require("./src/router/data");
 
 app.use("/", dataRouter);
