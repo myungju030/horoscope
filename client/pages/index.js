@@ -1,15 +1,12 @@
 import Canvas from "../components/Canvas";
 import Head from "next/head";
 import Link from "next/link";
+import HeadInfo from "@/components/HeadInfo";
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>별자리 운세</title>
-        <meta keyword="별자리 운세" />
-        <meta content="별자리 운세" />
-      </Head>
+      <HeadInfo />
       <div className="title">별자리 운세</div>
       <div className="canvas">
         <Canvas />
@@ -28,9 +25,9 @@ export default function Home() {
         <div class="typho">사수자리</div>
         <div class="typho">염소자리 </div>
       </div> */}
-      <button>
-        <Link href="/">운세보기</Link>
-      </button>
+      <Link href="/horoscope">
+        <button>운세보기</button>
+      </Link>
     </div>
   );
 }
