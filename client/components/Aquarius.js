@@ -68,8 +68,11 @@ export default function Aquarius() {
     ctx.fillRect(130, 10, 10, 10);
   }
   return (
-    <canvas id="aquarius" width="500px" height="550px">
-      Your browser does not support the canvas element.
-    </canvas>
+    <div className="card">
+      <canvas id="aquarius" width="200px" height="200px">
+        Your browser does not support the canvas element.
+      </canvas>
+      <span>물병자리</span>
+    </div>
   );
 }
