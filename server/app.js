@@ -11,6 +11,7 @@ app.use(express.json({ strict: false }));
 const port = 8080;
 const dataRouter = require("./src/router/data");
 
+app.get("/favicon.ico", (req, res) => res.status(204).end());
 app.use("/", dataRouter);
 
 const server = app.listen(port, () => {
