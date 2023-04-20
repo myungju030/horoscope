@@ -1,5 +1,7 @@
+import { useEffect } from "react";
+
 export default function Aquarius() {
-  if (typeof document !== "undefined") {
+  useEffect(() => {
     var canvas = document.getElementById("aquarius");
     var ctx = canvas.getContext("2d");
 
@@ -66,13 +68,10 @@ export default function Aquarius() {
     ctx.fillRect(90, 20, 10, 10);
     ctx.fillRect(110, 40, 10, 10);
     ctx.fillRect(130, 10, 10, 10);
-  }
+  });
   return (
-    <div className="card">
-      <canvas id="aquarius" width="200px" height="200px">
-        Your browser does not support the canvas element.
-      </canvas>
-      <span>물병자리</span>
-    </div>
+    <canvas id="aquarius" width="200px" height="200px">
+      Your browser does not support the canvas element.
+    </canvas>
   );
 }

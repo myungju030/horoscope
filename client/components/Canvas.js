@@ -1,5 +1,7 @@
+import { useEffect } from "react";
+
 export default function Canvas() {
-  if (typeof document !== "undefined") {
+  useEffect(() => {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
@@ -567,7 +569,7 @@ export default function Canvas() {
     ctx.fillRect(670, 570, 10, 20);
     ctx.fillRect(710, 570, 10, 20);
     ctx.fillRect(680, 590, 30, 10);
-  }
+  });
   return (
     <canvas id="myCanvas" width="800px" height="650px">
       Your browser does not support the canvas element.

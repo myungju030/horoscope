@@ -1,7 +1,8 @@
-import Aquarius from "@/components/Aquarius";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+
+import Aquarius from "@/components/Aquarius";
 
 const getData = async (keyword) => {
   const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/${keyword}`);
@@ -20,8 +21,13 @@ export default function Horoscope() {
   }, [data]);
 
   return (
-    <>
-      <div>{data}</div>
-    </>
+    <div className="keyword_container">
+      <div className="keyword_title">물병자리운세</div>
+      <div>
+        <Aquarius />
+      </div>
+      <div>1월 20일~2월 18일</div>
+      <div className="keyword_content">{data}</div>
+    </div>
   );
 }
