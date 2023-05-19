@@ -52,7 +52,7 @@ export default function Love() {
     ctx.fillRect(40, 60, 10, 10);
   });
   return (
-    <canvas id="love" width="100px" height="70px" className="love">
+    <canvas id="love" width="100px" height="70px">
       Your browser does not support the canvas element.
     </canvas>
   );

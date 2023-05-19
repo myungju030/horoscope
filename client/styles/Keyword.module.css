@@ -1,51 +1,65 @@
 .keyword_container {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #000000;
+  overflow-y: scroll;
 }
 
 .keyword {
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-  border: 3px solid white;
-}
-
-.keyword_left {
-  width: 35%;
+  max-width: 50rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  border: 1px solid white;
+  margin: 1rem;
+  padding: 2rem 4rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    border: none;
+  }
+}
+
+.keyword > div {
+  padding: 1rem 0;
 }
 
 .keyword_title {
   font-size: 50px;
-  margin: 1rem;
 }
 
-.keyword_content {
-  width: 65%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+.keyword_today {
+  font-size: 50px;
+}
+
+.keyword_today_title {
   font-size: 30px;
 }
 
-.love {
-  width: 30px;
-  height: 30px;
-  margin: 1rem 0rem;
+.keyword_today_content {
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
-.keyword_bottom {
+.keyword_love {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyword_heart {
+  margin-top: 1rem;
+  font-size: 30px;
+}
+
+.keyword_love_content {
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin-top: 2rem;
+  font-size: 20px;
 }
