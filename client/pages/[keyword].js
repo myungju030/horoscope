@@ -13,6 +13,7 @@ import Sagittarius from "@/components/Sagittarius";
 import Capricorn from "@/components/Capricorn";
 import Love from "@/components/Love";
 import style from "../styles/Keyword.module.css";
+import Link from "next/link";
 
 export default function Horoscope({ data, keyword }) {
   return (
@@ -58,6 +59,11 @@ export default function Horoscope({ data, keyword }) {
           <div className={style.keyword_heart}>애정운</div>
           <div className={style.keyword_love_content}>
             {data?.slice(data?.indexOf("애정운") + 4)}
+          </div>
+          <div className={style.bottom}>
+            <Link href="/">
+              <button className={style.button}>홈으로</button>
+            </Link>
           </div>
         </div>
       </div>

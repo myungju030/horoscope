@@ -12,7 +12,6 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  margin-top: 1rem;
   height: 150px;
   font-size: 100px;
   text-align: center;
@@ -24,17 +23,22 @@
 }
 
 .canvas {
-  height: 992px;
-
+  height: 690px;
   @media (max-width: 992px) {
     display: none;
   }
 }
 
+.bottom {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   height: 80px;
   width: 400px;
-  margin-bottom: 40px;
   border: none;
   text-align: center;
   font-size: 60px;

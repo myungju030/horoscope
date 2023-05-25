@@ -11,9 +11,11 @@ export default function Home() {
       <div className={style.canvas}>
         <Canvas />
       </div>
-      <Link href="/horoscope">
-        <button className={style.button}>운세보기</button>
-      </Link>
+      <div className={style.bottom}>
+        <Link href="/horoscope">
+          <button className={style.button}>운세보기</button>
+        </Link>
+      </div>
     </div>
   );
 }
