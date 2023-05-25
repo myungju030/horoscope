@@ -14,10 +14,16 @@ import Capricorn from "@/components/Capricorn";
 import Love from "@/components/Love";
 import style from "../styles/Keyword.module.css";
 import Link from "next/link";
+import HeadInfo from "@/components/HeadInfo";
 
 export default function Horoscope({ data, keyword }) {
   return (
     <div className={style.keyword_container}>
+      <HeadInfo
+        title={`${keyword}자리 운세`}
+        keyword={`${keyword}자리 운세`}
+        content={`${keyword}자리 운세`}
+      />
       <div className={style.keyword}>
         <div className={style.keyword_title}>{keyword}자리</div>
         <div className={style.keyword_img}>
