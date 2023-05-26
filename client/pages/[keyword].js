@@ -93,7 +93,7 @@ export const getStaticPaths = async () => {
       { params: { keyword: "사수" } },
       { params: { keyword: "염소" } },
     ],
-    fallback: true,
+    fallback: "blocking",
   };
 };
 
@@ -105,6 +105,7 @@ export const getStaticProps = async ({ params }) => {
     const data = res.data[0];
     return {
       props: { data, keyword: params.keyword },
+      revalidate: 10,
     };
   } catch (err) {
     console.log(err);
