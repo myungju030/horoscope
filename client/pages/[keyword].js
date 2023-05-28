@@ -61,7 +61,6 @@ export default function Horoscope({ data, keyword }) {
           {data?.slice(data?.lastIndexOf(")") + 1, data?.indexOf("애정운"))}
         </div>
         <div className={style.keyword_love}>
-          <Love />
           <div className={style.keyword_heart}>애정운</div>
           <div className={style.keyword_love_content}>
             {data?.slice(data?.indexOf("애정운") + 4)}

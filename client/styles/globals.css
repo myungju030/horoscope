@@ -33,3 +33,21 @@
   height: 30px;
   margin: 1rem 0rem;
 }
+
+.loading_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.loading {
+  animation: scale 1s step-end infinite;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(2.2);
+  }
+}
