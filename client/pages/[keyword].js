@@ -77,27 +77,7 @@ export default function Horoscope({ data, keyword }) {
   );
 }
 
-export const getStaticPaths = async () => {
-  return {
-    paths: [
-      { params: { keyword: "물병" } },
-      { params: { keyword: "물고기" } },
-      { params: { keyword: "양" } },
-      { params: { keyword: "황소" } },
-      { params: { keyword: "쌍둥이" } },
-      { params: { keyword: "게" } },
-      { params: { keyword: "사자" } },
-      { params: { keyword: "처녀" } },
-      { params: { keyword: "천칭" } },
-      { params: { keyword: "전갈" } },
-      { params: { keyword: "사수" } },
-      { params: { keyword: "염소" } },
-    ],
-    fallback: "blocking",
-  };
-};
-
-export const getStaticProps = async ({ params }) => {
+export const getServerSideProps = async ({ params }) => {
   try {
     const res = await axios.get(
       `${process.env.NEXT_PUBLIC_API_URL}/${params.keyword}`
@@ -105,7 +85,6 @@ export const getStaticProps = async ({ params }) => {
     const data = res.data[0];
     return {
       props: { data, keyword: params.keyword },
-      revalidate: 10,
     };
   } catch (err) {
     console.log(err);
