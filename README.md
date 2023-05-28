@@ -1,7 +1,7 @@
 
 <div align =center>
   
-[ 솔로 프로젝트 ]  
+[ 개 프로젝트 ]  
 # 오늘의 별자리 운세 💫
   ![스크린샷 2023-05-26 033154](https://github.com/myungju030/horoscope/assets/96197310/04946846-b48e-43e2-87a4-c1568ab2cb0b)
 
@@ -25,7 +25,7 @@ https://horoscope-ivory.vercel.app/
 <br/>
 
 ### 📌 lighthouse 성능 측정
-
-![스크린샷 2023-05-26 042605](https://github.com/myungju030/horoscope/assets/96197310/85f88021-d353-49a1-be92-255878636394)
+  
+![스크린샷 2023-05-29 002833](https://github.com/myungju030/horoscope/assets/96197310/ce8b3403-0e60-4c2a-9c8d-ff949c553af9)
   
   </div>
