@@ -26,6 +26,7 @@ https://horoscope-ivory.vercel.app/
 
 ### 📌 lighthouse 성능 측정
   
-![스크린샷 2023-05-29 002833](https://github.com/myungju030/horoscope/assets/96197310/ce8b3403-0e60-4c2a-9c8d-ff949c553af9)
+  ![스크린샷 2023-05-29 015621](https://github.com/myungju030/horoscope/assets/96197310/a224324a-2397-49d9-afae-d087ab64ab7a)
+
   
   </div>
